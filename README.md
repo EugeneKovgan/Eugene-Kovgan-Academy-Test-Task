@@ -1,3 +1,3 @@
 # Eugene-Kovgan-Academy-Test-Task
 
-в функции реализован вывод результатов в консооль((
+https://gitlab.com/EugeneKovgan/Eugene-Kovgan-Academy-Test-Task
