@@ -110,10 +110,15 @@ function calculateRoverPath(map) {
 
   // вывод результатлв в консоль
 
-  console.log(`path-plan.txt
+  return `path-plan.txt
 ${result}->[${finishPointI}][${finishPointJ}]
 steps: ${steps} 
-fuel: ${fuel}`);
+fuel: ${fuel}`;
+
+  //   console.log(`path-plan.txt
+  // ${result}->[${finishPointI}][${finishPointJ}]
+  // steps: ${steps}
+  // fuel: ${fuel}`);
 }
 
 module.exports = {
