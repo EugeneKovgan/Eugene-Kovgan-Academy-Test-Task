@@ -1,4 +1,5 @@
 function calculateRoverPath(map) {
+  const fs = require("fs");
   let startPoint;
   let currentPoint;
   let steps = 0;
@@ -108,12 +109,17 @@ function calculateRoverPath(map) {
   result = result.join("->");
   // console.log('счётчик = ' + steps)
 
-  // вывод результатлв в консоль
+  fs.writeFileSync(
+    "path-plan.txt",
+    `${result}->[${finishPointI}][${finishPointJ}]
+  steps: ${steps}
+  fuel: ${fuel}`
+  );
 
-  return `path-plan.txt
-${result}->[${finishPointI}][${finishPointJ}]
-steps: ${steps} 
-fuel: ${fuel}`;
+  //   return `path-plan.txt
+  // ${result}->[${finishPointI}][${finishPointJ}]
+  // steps: ${steps}
+  // fuel: ${fuel}`;
 
   //   console.log(`path-plan.txt
   // ${result}->[${finishPointI}][${finishPointJ}]
